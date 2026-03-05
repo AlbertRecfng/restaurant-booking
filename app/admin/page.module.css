@@ -1,0 +1,298 @@
+.page {
+  background: #0a0804;
+  color: #e8dcc8;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 100px 0 40px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Cormorant SC', serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #e8dcc8;
+  margin-bottom: 16px;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  color: #b8985a;
+  font-weight: 300;
+}
+
+.panel {
+  background: rgba(184, 152, 90, 0.05);
+  border: 1px solid rgba(184, 152, 90, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.panelHeader {
+  padding: 24px 32px;
+  background: rgba(184, 152, 90, 0.1);
+  border-bottom: 1px solid rgba(184, 152, 90, 0.2);
+}
+
+.panelTitle {
+  font-family: 'Cormorant SC', serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #e8dcc8;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #b8985a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 20px 32px;
+  text-align: left;
+  border-bottom: 1px solid rgba(184, 152, 90, 0.2);
+}
+
+.table td {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 16px;
+  color: #e8dcc8;
+  padding: 20px 32px;
+  border-bottom: 1px solid rgba(184, 152, 90, 0.1);
+  vertical-align: middle;
+}
+
+.table tr:hover {
+  background: rgba(184, 152, 90, 0.05);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.tableNumber {
+  font-weight: 500;
+  color: #e8dcc8;
+}
+
+.tableCapacity {
+  font-size: 14px;
+  color: #b8985a;
+  margin-top: 4px;
+}
+
+.clientName {
+  font-weight: 500;
+  color: #e8dcc8;
+}
+
+.clientEmail {
+  font-size: 14px;
+  color: #b8985a;
+  margin-top: 4px;
+}
+
+.price {
+  font-weight: 500;
+  color: #b8985a;
+}
+
+.cancelButton {
+  padding: 8px 16px;
+  background: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background: #ff5252;
+  opacity: 0.9;
+}
+
+.cancelButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 32px;
+  color: #b8985a;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+}
+
+.errorState {
+  text-align: center;
+  padding: 60px 32px;
+}
+
+.errorTitle {
+  font-family: 'Cormorant SC', serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #ff6b6b;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.errorMessage {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  color: #ff6b6b;
+}
+
+.loadingState {
+  text-align: center;
+  padding: 60px 32px;
+}
+
+.loadingSpinner {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #b8985a;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 16px;
+}
+
+.loadingText {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  color: #b8985a;
+}
+
+.refreshContainer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.refreshButton {
+  padding: 12px 24px;
+  background: #b8985a;
+  color: #0a0804;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+
+.refreshButton:hover {
+  opacity: 0.85;
+  background: #a68648;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .header {
+    padding: 80px 0 32px;
+  }
+  
+  .title {
+    font-size: 36px;
+  }
+  
+  .panelHeader {
+    padding: 20px 24px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 16px 24px;
+    font-size: 14px;
+  }
+  
+  .table th {
+    font-size: 10px;
+  }
+  
+  .cancelButton {
+    padding: 6px 12px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+  
+  .panelHeader {
+    padding: 16px 20px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+  
+  .table th {
+    font-size: 9px;
+  }
+  
+  .cancelButton {
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+}

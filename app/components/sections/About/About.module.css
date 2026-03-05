@@ -1,0 +1,62 @@
+.section {
+  padding: 120px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.label {
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: #b8985a;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.goldLine {
+  width: 40px;
+  height: 1px;
+  background: #b8985a;
+  margin: 28px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: #b0a090;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.statNumber {
+  font-size: 52px;
+  font-weight: 300;
+  color: #b8985a;
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #6a5a42;
+  margin-top: 8px;
+}

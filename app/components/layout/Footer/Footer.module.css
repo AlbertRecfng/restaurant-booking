@@ -1,0 +1,22 @@
+.footer {
+  padding: 48px 60px;
+  border-top: 1px solid rgba(184, 152, 90, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cormorant SC', serif;
+  font-size: 18px;
+  letter-spacing: 6px;
+  color: #b8985a;
+  text-decoration: none;
+}
+
+.text {
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #4a3a2a;
+}

@@ -1,0 +1,27 @@
+.section {
+  text-align: center;
+  padding: 140px 60px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(184, 152, 90, 0.06) 0%, transparent 70%);
+}
+
+.label {
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: #b8985a;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #9a8a72;
+  font-style: italic;
+  margin-bottom: 48px;
+}

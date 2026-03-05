@@ -1,0 +1,130 @@
+.bookingsContainer {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.sectionTitle {
+  font-family: 'Cormorant SC', serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #e8dcc8;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.loading {
+  text-align: center;
+  color: #b8985a;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(184, 152, 90, 0.05);
+  border: 1px solid rgba(184, 152, 90, 0.2);
+  border-radius: 4px;
+}
+
+.emptyState p {
+  color: #e8dcc8;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.bookingLink {
+  display: inline-block;
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #0a0804;
+  background: #b8985a;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: opacity 0.3s ease;
+  text-transform: uppercase;
+}
+
+.bookingLink:hover {
+  opacity: 0.85;
+}
+
+.bookingsList {
+  display: grid;
+  gap: 20px;
+}
+
+.bookingCard {
+  background: rgba(184, 152, 90, 0.05);
+  border: 1px solid rgba(184, 152, 90, 0.2);
+  border-radius: 4px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.bookingCard:hover {
+  border-color: rgba(184, 152, 90, 0.4);
+  background: rgba(184, 152, 90, 0.08);
+}
+
+.bookingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.tableNumber {
+  font-family: 'Cormorant SC', serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #b8985a;
+  letter-spacing: 1px;
+}
+
+.status {
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.bookingDetails {
+  display: grid;
+  gap: 12px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  color: #e8dcc8;
+  font-size: 16px;
+}
+
+.label {
+  color: #b8985a;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .bookingHeader {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .detail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .bookingCard {
+    padding: 20px;
+  }
+}

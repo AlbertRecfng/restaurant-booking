@@ -1,0 +1,24 @@
+.floor {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-image: url('/photo/maket.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(184, 152, 90, 0.15);
+  border-radius: 12px;
+}
+
+.tableWrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
